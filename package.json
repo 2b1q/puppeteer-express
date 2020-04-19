@@ -1,0 +1,24 @@
+{
+  "name": "puppeteer-express",
+  "version": "1.0.0",
+  "description": "puppeteer express hello world",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "2b1q",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2b1q/puppeteer-express.git"
+  },
+  "keywords": ["puppeteer", "node", "express"],
+  "dependencies": {
+    "express": "^4.17.1",
+    "puppeteer": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
