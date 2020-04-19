@@ -19,7 +19,7 @@ const gotoSite = async site => {
     if (!site) {
       return 'site not provided'
     }
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({args: ['--no-sandbox']});
     const page = await browser.newPage();
     await page.goto(`https://${site}`);
     // await page.screenshot({path: 'example.png'});
