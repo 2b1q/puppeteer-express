@@ -22,7 +22,6 @@ const gotoSite = async site => {
     const browser = await puppeteer.launch({args: ['--no-sandbox']});
     const page = await browser.newPage();
     await page.goto(`https://${site}`);
-    // await page.screenshot({path: 'example.png'});
     await browser.close();
     return 'done';
   } catch (err) {
